@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+        *{
+            font-family: "Roboto", sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background: lightblue;
+            height: 100vh;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            padding: 40px;
+        }
+
+        .header-sad-mood{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            
+        }
+
+        .header-sad-mood img{
+            height: 300px;
+            width: 300px;
+            object-fit: contain;
+            text-align: center;
+            
+        }
+        
+        .header-sad-mood{
+            font-size: 22px;
+        }
+
+        .content-section{
+            width: 500px;
+            margin-bottom: 50px;
+        }
+
+        .content-list{
+            padding: 15px 30px;
+        }
+
+        table, td, th {
+            border: 1px solid;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .content-course{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .form-submit{
+            width: 100%;
+            line-height: 30px;
+        }
+
+        .submit-gender{
+            display: flex;
+            
+        }
+
+        .submit-gender span{
+            margin-right: 25px;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-sad-mood">
+            <img src="./happy.jpg" alt="">
+            <h1>Happy Mood</h1>
+        </div>
+        <hr >
+        <div class="content-section">
+            <h2>Current coures</h2>
+            <ul class="content-list">
+                <li class="content-item">Cse 123 - HTml (<a href="https://www.w3schools.com/html/default.asp">link</a>)</li>
+                <li class="content-item">CSE 543 - Math </li>
+                <li class="content-item">CSE 122 - research </li>
+            </ul>
+            <h2>Hobies</h2>
+            <ul class="content-list">
+                <li class="content-item">Game</li>
+                <li class="content-item">Music</li>
+                <li class="content-item">Sleep</li>
+            </ul>
+        </div>
+        <div class="content-course">
+            <h1>Courses</h1>
+            <table>
+                <tr>
+                    <th>Course number</th>
+                    <th>course title</th>
+                    <th>Semester taken</th>
+                </tr>
+                <tr>
+                    <th colspan="3">For credit</th>
+                </tr>
+                <tr>
+                    <td>6.1223</td>
+                    <td>Operating system</td>
+                    <td>spring 19</td>
+                </tr>
+                <tr>
+                    <td>5.9480</td>
+                    <td>Artifical intelligence</td>
+                    <td>fall 19</td>
+                </tr>
+                <tr>
+                    <td>7.0879</td>
+                    <td>Data mining</td>
+                    <td>fall 19</td>
+                </tr>
+                <tr>
+                    <th colspan="3">For listener</th>
+                </tr>
+                <tr>
+                    <td>8.0383</td>
+                    <td>Database</td>
+                    <td>fall 19</td>
+                </tr>
+                <tr>
+                    <td>6.0393</td>
+                    <td>Java programming</td>
+                    <td>spring 19</td>
+                </tr>
+            </table>
+        </div>
+        <div class="form-submit">
+            <h1>Submit information</h1>
+            <div class="submit-information">
+                <div class="submit-name">
+                    Full Name: <input type="text">
+                </div>
+                <div class="submit-gender">
+                    <span>Hobies: </span>
+                    <div class="submit-gender-radio">
+                        Male <input type="radio">
+                        Female <input type="radio">
+                    </div>
+                </div>
+                <div class="submit-hobies">
+                    
+                    <span>Music</span> <input type="checkbox" name="music" id="">
+                    <span>Games</span> <input type="checkbox" name="game" id="">
+                    <span>Movie</span> <input type="checkbox" name="movies" id="">
+                </div>
+                <div class="submit-date">
+                    <span>Date of birth: </span>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+</body>
+</html>
